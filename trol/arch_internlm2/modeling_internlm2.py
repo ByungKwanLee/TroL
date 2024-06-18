@@ -867,12 +867,13 @@ class InternLM2Model(InternLM2PreTrainedModel):
         self.norm = InternLM2RMSNorm(
             config.hidden_size, eps=config.rms_norm_eps)
 
-        self.trol_gating = nn.ModuleList([nn.Linear(self.config.hidden_size, 1)]*self.config.num_hidden_layers)
-        self.trol_function = lambda x, idx: 0.5*F.tanh(self.trol_gating[idx](x))+0.5
-
         self.gradient_checkpointing = False
         # Initialize weights and apply final processing
         self.post_init()
+
+    def initialize_trol_gating(self):
+        self.trol_gating = nn.ModuleList([nn.Linear(self.config.hidden_size, 1).cuda()]*self.config.num_hidden_layers)
+        self.trol_function = lambda x, idx: 0.5*F.tanh(self.trol_gating[idx](x))+0.5
 
     def get_input_embeddings(self):
         return self.tok_embeddings

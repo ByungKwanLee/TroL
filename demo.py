@@ -7,7 +7,7 @@ from trol.load_trol import load_trol
 from torchvision.transforms.functional import pil_to_tensor
 
 # model selection
-link = 'TroL-3.8B' # [Select One] 'TroL-1.8B' | 'TroL-3.8B' | 'TroL-7B'
+link = 'TroL-7B' # [Select One] 'TroL-1.8B' | 'TroL-3.8B' | 'TroL-7B'
 
 # User prompt
 prompt_type="with_image" # Select one option "text_only", "with_image"

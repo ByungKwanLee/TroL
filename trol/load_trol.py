@@ -53,7 +53,6 @@ def load_trol(link):
             torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
             attn_implementation="flash_attention_2",
-            ignore_mismatched_sizes=True,
             quantization_config=BitsAndBytesConfig(
                 load_in_4bit=bits == 4,
                 load_in_8bit=bits == 8,
@@ -70,7 +69,6 @@ def load_trol(link):
             torch_dtype=torch.float16,
             low_cpu_mem_usage=True,
             attn_implementation="flash_attention_2",
-            ignore_mismatched_sizes=True,
         ))
 
     # Loading tokenizer & Loading backbone model (error -> then delete flash attention)
@@ -84,11 +82,18 @@ def load_trol(link):
 
     # setting config
     setting_trol_config(trol, tok_trol, image_special_token)
-    
+
     # trol gating load
     from huggingface_hub import hf_hub_download
     try:
+        trol.model.initialize_trol_gating()
         trol.model.trol_gating.load_state_dict(torch.load(hf_hub_download(repo_id=path, filename="trol_gating.pt")))
     except:
+        trol.language_model.model.initialize_trol_gating()
         trol.language_model.model.trol_gating.load_state_dict(torch.load(hf_hub_download(repo_id=path, filename="trol_gating.pt")))
+
+    # X -> float16 conversion 
+    for param in trol.parameters():
+        if 'float32' in str(param.dtype).lower() or 'float16' in str(param.dtype).lower():
+            param.data = param.data.to(torch.float16)
     return trol, tok_trol
