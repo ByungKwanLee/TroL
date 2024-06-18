@@ -1,5 +1,7 @@
 # <img src="figures/trol_emoji.png" style="vertical-align: -5px;" :height="50px" width="50px">TroL: Traversal of Layers for Large Language and Vision Models
 
+![ezgif-7-39323875d4](https://github.com/ByungKwanLee/TroL/assets/50401429/e10afd09-117b-41f1-b046-4512676cdf1a)
+
 ## 📰 News
 - TroL-1.8B is soon released in 🤗Huggingface Models.
 - TroL-3.8B is soon released in 🤗Huggingface Models.
@@ -9,7 +11,6 @@
 
 
 Official PyTorch implementation code for realizing the technical part of *Traversal of Layers (TroL)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readibility and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
-
 
 ## 💡 Highlights
 Open-source LLVMs with Standard Model Size
