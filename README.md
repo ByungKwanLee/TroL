@@ -3,9 +3,9 @@
 ![ezgif-7-39323875d4](https://github.com/ByungKwanLee/TroL/assets/50401429/e10afd09-117b-41f1-b046-4512676cdf1a)
 
 ## 📰 News
-- TroL-1.8B is soon released in 🤗Huggingface Models.
-- TroL-3.8B is soon released in 🤗Huggingface Models.
-- TroL-7B is soon released in 🤗Huggingface Models.
+- TroL-1.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-1.8B).
+- TroL-3.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-3.8B).
+- TroL-7B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-7B).
 - TroL demo is soon released in 🤗Huggingface Spaces.
 - Preprint of TroL is soon uploaded in ArXiv.
 
