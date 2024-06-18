@@ -23,7 +23,7 @@ def load_trol(link):
         from transformers import LlamaTokenizerFast as TroLTokenizer
         bits = 8
         path = TROL_3_8B
-        bit_quant_skip = ["vision_model", "mlp1", "lm_head"]
+        bit_quant_skip = ["vision_model", "vision_proj", "lm_head"]
 
     elif link == 'TroL-7B':
         from .arch_internlm2.modeling_trol import TroLForCausalLM
