@@ -12,7 +12,7 @@ link = "TroL-7B" # [Select One] 'TroL-1.8B' | 'TroL-3.8B' | 'TroL-7B'
 # User prompt
 prompt_type="with_image" # Select one option "text_only", "with_image"
 img_path='figures/demo.png'
-question="What is the troll doing? Provide the detail in the image and imagingation what the event happens."
+question="What is the troll doing? Provide the detail in the image and imagine what the event happens."
 
 # loading model
 model, tokenizer = load_trol(link=link)
