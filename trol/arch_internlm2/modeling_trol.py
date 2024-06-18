@@ -30,7 +30,7 @@ class TroLForCausalLM(InternLM2PreTrainedModel):
         # Model
         self.model = InternLM2Model(config)
         self.vocab_size = config.vocab_size
-        self.output = nn.Linear(config.hidden_size, config.vocab_size-1, bias=False)
+        self.output = nn.Linear(config.hidden_size, config.vocab_size, bias=False)
         self.max_length = config.max_length
 
         # Initialize weights and apply final processing

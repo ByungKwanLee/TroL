@@ -857,7 +857,7 @@ class InternLM2Model(InternLM2PreTrainedModel):
         self.vocab_size = config.vocab_size
         self.config = config
 
-        self.tok_embeddings = nn.Embedding(config.vocab_size,
+        self.tok_embeddings = nn.Embedding(config.vocab_size+1,
                                            config.hidden_size,
                                            self.padding_idx)
         self.layers = nn.ModuleList([
