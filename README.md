@@ -3,6 +3,7 @@
 ![ezgif-3-e30b467e05](https://github.com/ByungKwanLee/TroL/assets/50401429/eba1f7e6-c44e-44b7-8d09-ff768dd9495e)
 
 ## 📰 News
+Thanks to huggingface staff, we can use free ZeroGPU (NVIDIA A100) for each user but there are limited queries, so if the inferences are stuck, then please wait for few minutes. (Local demo speed is much more faster than this online GPU space.)
 - TroL-1.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-1.8B). (local demo readme included)
 - TroL-3.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-3.8B). (local demo readme included)
 - TroL-7B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-7B). (local demo readme included)
