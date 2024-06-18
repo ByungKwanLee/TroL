@@ -12,30 +12,30 @@
 Official PyTorch implementation code for realizing the technical part of *Traversal of Layers (TroL)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readibility and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
 
 ## 💡 Highlighted Images
-<center>Figure 1. TroL Layer. New Propagation.</center>
-<p align="center">
 <img src="figures/figure1.jpg" width="192" height="300"/>
-</p>
 
-<center>Figure 2. Structure of TroL-Mixer.</center>
-<p align="center">
+Figure 1. TroL Layer. New Propagation.
+
+
 <img src="figures/figure2.jpg" width="355" height="300">
-</p>
 
-<center>Figure 3. Performances across numerous model sizes.</center>
-<p align="center">
+Figure 2. Structure of TroL-Mixer.
+
+
 <img src="figures/figure3.jpg" width="819" height="300">
-</p>
 
-<center>Figure 4. Comparison with Closed-source LLVMs</center>
-<p align="center">
+Figure 3. Performances across numerous model sizes.
+
+
+
 <img src="figures/figure4.jpg" width="599" height="300">
-</p>
 
-<center>Figure 5. Investigating where layer traversal (reusing layers) mostly happens</center>
-<p align="center">
+Figure 4. Comparison with Closed-source LLVMs.
+
+
 <img src="figures/figure5.jpg" width="1008" height="300">
-</p>
+
+Figure 5. Investigating where layer traversing (reusing layers) mostly happens.
 
 
 ## 📊 Results
