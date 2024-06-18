@@ -150,7 +150,7 @@ def test(args):
         memory_optimization()
 
         # evaluate on dataset
-        results[data] = evaluator.evaluate('TroL-'+args.link, data, accel)
+        results[data] = evaluator.evaluate(args.link, data, accel)
     
     accel.print(results)
     return
