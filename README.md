@@ -3,16 +3,45 @@
 ![ezgif-3-e30b467e05](https://github.com/ByungKwanLee/TroL/assets/50401429/eba1f7e6-c44e-44b7-8d09-ff768dd9495e)
 
 ## 📰 News
-- TroL-1.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-1.8B).
-- TroL-3.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-3.8B).
-- TroL-7B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-7B).
-- TroL demo is soon released in 🤗Huggingface Spaces.
+- TroL-1.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-1.8B). (local demo readme included)
+- TroL-3.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-3.8B). (local demo readme included)
+- TroL-7B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-7B). (local demo readme included)
+- Online TroL demo is soon released in 🤗[Huggingface Spaces](https://huggingface.co/spaces/BK-Lee/TroL). (You can choose model size)
 - Preprint of TroL is soon uploaded in ArXiv.
-
 
 Official PyTorch implementation code for realizing the technical part of *Traversal of Layers (TroL)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readibility and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
 
-## 💡 Highlights
+## 💡 Highlighted Images
+<center>Figure 1. TroL Layer. New Propagation.</center>
+<p align="center">
+<img src="figures/figure1.jpg" width="192" height="300"/>
+</p>
+
+<center>Figure 2. Structure of TroL-Mixer.</center>
+<p align="center">
+<img src="figures/figure2.jpg" width="355" height="300">
+</p>
+
+<center>Figure 3. Performances across numerous model sizes.</center>
+<p align="center">
+<img src="figures/figure3.jpg" width="819" height="300">
+</p>
+
+<center>Figure 4. Comparison with Closed-source LLVMs</center>
+<p align="center">
+<img src="figures/figure4.jpg" width="599" height="300">
+</p>
+
+<center>Figure 5. Investigating where layer traversal (reusing layers) mostly happens</center>
+<p align="center">
+<img src="figures/figure5.jpg" width="1008" height="300">
+</p>
+
+
+---
+
+## 📊 Results
+
 Open-source LLVMs with Standard Model Size
 
 | LLVMs         | SQA-IMG | POPE |  MME |  MMB | MathVista | SEED-IMG | MM-Vet | LLaVA-W |
