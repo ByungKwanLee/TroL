@@ -1,0 +1,16 @@
+#!/bin/bash
+conda create -n trol python=3.11 -y
+conda activate trol
+
+# install torch
+pip3 install torch torchvision
+
+# install requiresments
+pip install -r requirements.txt
+
+# flash attention
+# if flash attnetion makes error, then download the wheel and run the command "pip install XXX.whl --no-build-isolation"
+pip install flash-attn --no-build-isolation
+
+# all cache deleted 
+conda clean -a && pip cache purge
