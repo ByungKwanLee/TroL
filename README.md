@@ -38,8 +38,6 @@ Official PyTorch implementation code for realizing the technical part of *Traver
 </p>
 
 
----
-
 ## 📊 Results
 
 Open-source LLVMs with Standard Model Size
