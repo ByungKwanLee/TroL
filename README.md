@@ -1,6 +1,6 @@
 # <img src="figures/trol_emoji.png" style="vertical-align: -5px;" :height="50px" width="50px">TroL: Traversal of Layers for Large Language and Vision Models
 
-![ezgif-7-fdcb48881f](https://github.com/ByungKwanLee/TroL/assets/50401429/1b91a668-7c21-4d5d-956f-a84e69356c70)
+![ezgif-3-e30b467e05](https://github.com/ByungKwanLee/TroL/assets/50401429/eba1f7e6-c44e-44b7-8d09-ff768dd9495e)
 
 ## 📰 News
 - TroL-1.8B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-1.8B).
