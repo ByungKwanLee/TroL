@@ -20,3 +20,4 @@ word2number
 opencv-python
 Rouge
 python-Levenshtein
+gradio
