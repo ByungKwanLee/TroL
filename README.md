@@ -9,7 +9,7 @@ Thanks to huggingface staff, we can use free ZeroGPU (NVIDIA A100) for each user
 - TroL-7B is now available in 🤗[Huggingface Models](https://huggingface.co/BK-Lee/TroL-7B). (local demo readme included)
 - Online TroL demo is now available in 🤗[Huggingface Spaces](https://huggingface.co/spaces/BK-Lee/TroL). (You can choose model size)
 
-Official PyTorch implementation code for realizing the technical part of *Traversal of Layers (TroL)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readibility and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
+Official PyTorch implementation code for realizing the technical part of *Traversal of Layers (TroL)* to improve numerous vision language performances with efficient model size. This code is developed from scratch. so I have been trying to improve the readability and simplicity of the code, compared with LLaVA which has relatively complexly structured code.
 
 ## 💡 Highlighted Images
 <img src="figures/figure1.jpg" width="192" height="300"/>
