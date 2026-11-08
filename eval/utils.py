@@ -638,7 +638,7 @@ def evaluate_relaxed_accuracy(entries):
 
 # POPE
 def eval_pope(answers, label_file):
-    label_list = [json.loads(q)['label'] for q in open(label_file, 'r')]
+    label_list = [json.loads(q)['label'] for q in open(label_file, 'r', encoding='utf-8')]
 
     for answer in answers:
         text = answer['answer'].lower()
